@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hind", sans-serif;
+  font-size: 10px;
+  color: #333333;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  font-size: 1.2rem;
+  cursor: url("images/cursorlogo.png"), pointer;
+}
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto auto auto;
+  padding: 0 1.5rem;
+}
+.header {
+  align-items: center;
+  padding: 3rem 0;
+}
+.logo {
+  height: 80px;
+  width: auto;
+  display: inline-block;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0 0 0 1.4rem;
+  display: inline-block;
+}
+.contactdiv {
+  padding: 2rem 0;
+}
+.contact {
+  color: #333333;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact:hover {
+  color: #999999;
+  text-decoration: none;
+}
+p {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas:
+    "img-1 img-2 img-3 img-3"
+    "img-1 img-4 img-5 img-6"
+    "img-7 img-7 img-8 img-6";
+}
+.image-gallery a {
+  width: 100%;
+  height: 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+ion-icon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.4rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+/* Pseudo-element on the anchor tag: */
+.image-gallery a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+ion-icon,
+.image-gallery a:hover::before {
+  opacity: 1;
+}
+.img-1 {
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url("images/img-1.png");
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url("images/img-2.png");
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("images/img-3.png");
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url("images/img-4.png");
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url("images/img-5.png");
+}
+.img-6 {
+  grid-area: img-6;
+  min-height: 51.5rem;
+  background-image: url("images/img-6.png");
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("images/img-7.png");
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url("images/img-8.png");
+}
+
+@media screen and (max-width: 900px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-2 img-2"
+      "img-1 img-1 img-3 img-3"
+      "img-4 img-4 img-5 img-5"
+      "img-7 img-7 img-6 img-6"
+      "img-8 img-8 img-6 img-6";
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-1 img-1"
+      "img-2 img-2 img-2 img-2"
+      "img-3 img-3 img-3 img-3"
+      "img-4 img-4 img-4 img-4"
+      "img-5 img-5 img-5 img-5"
+      "img-6 img-6 img-6 img-6"
+      "img-7 img-7 img-7 img-7"
+      "img-8 img-8 img-8 img-8";
+  }
+  .image-gallery a,
+  .img-1,
+  .img-6 {
+    height: 30rem;
+    min-height: 30rem;
+  }
+  @media screen and (max-width: 470px) {
+    h1 {
+      font-size: 3.8rem;
+      margin: 0;
+    }
+    .logo {
+      height: 40px;
+      margin-right: 1rem;
+    }
+  }
+}

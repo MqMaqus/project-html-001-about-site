@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="about, lemur graphics, web development, graphic design"
+    />
+    <meta
+      name="description"
+      content="About Lemur Graphics graphic design and web development studio"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Lemur Graphics About</title>
+  </head>
+  <body>
+    <a name="top"></a>
+    <header id="header">
+      <nav id="logo">
+        <a href="index.html"
+          ><img id="logopic" src="images/logo2.png" alt="Lemur Graphics logo"
+        /></a>
+        <a class="logolink" href="index.html">Lemur Graphics</a>
+      </nav>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a class="navlink" href="index.html">Home</a></li>
+          <li><a class="navlink" href="works.html">Works</a></li>
+          <li><a class="navlink" href="gallery.html">Gallery</a></li>
+          <li><a class="navlink" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section id="works-first">
+        <h1 class="h1works">About</h1>
+      </section>
+
+      <section id="works-second">
+        <img
+          class="kepem"
+          src="images/sajatkep.jpg"
+          alt="Lemur Graphics portrait"
+        />
+        <div class="about-div">
+          <div class="about-text">
+            <p>
+              Lemur Graphics is Marta Korosi, junior graphic designer and
+              frontend web developer student.
+            </p>
+            <div class="qualifications">
+              <ul>
+                <li class="first-level-li"><strong>Qualifications</strong></li>
+                <ol>
+                  <li class="second-level-li">
+                    Graphic design certificate, 2021
+                  </li>
+                  <li class="second-level-li">
+                    Software developer certificate, 2019
+                  </li>
+                  <li class="second-level-li">PhD in Gender Studies, 2015</li>
+                  <li class="second-level-li">
+                    MA in English Language and Literature, 1998
+                  </li>
+                </ol>
+                <li class="first-level-li">
+                  <strong>Skills and competencies</strong>
+                </li>
+                <ol>
+                  <li class="second-level-li" class="second-level-li">
+                    English (advanced level)
+                  </li>
+                  <li class="second-level-li">
+                    Graphic design programs (Adobe Suite)
+                  </li>
+                  <li class="second-level-li">HTML, CSS</li>
+                </ol>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h3 id="write-to-us"><strong>Write to us!</strong></h3>
+          <form action="/" method="GET" id="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              minlength="5"
+              required
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Please write your message here"
+              style="height: 200px"
+              minlength="20"
+              required
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        Lemur Graphics
+      </p>
+      <a href="#top" class="btn">Back to top</a>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

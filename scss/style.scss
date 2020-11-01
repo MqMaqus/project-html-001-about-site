@@ -1,0 +1,395 @@
+@import "config";
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $secondary-background;
+  font-family: $font-stack;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 500;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: $secondary-background2;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  // overflow: hidden; -- sticky navbar JS nélkül -- de csak akkor jó, ha nincs hamburger menü)
+  // position: fixed; -- sticky navbar JS nélkül -- de csak akkor jó, ha nincs hamburger menü)
+  top: 0;
+}
+.navlink {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: $light-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  float: left;
+  height: 60px;
+  margin-right: 16px;
+  ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  li {
+    padding: 15px;
+  }
+}
+.nav {
+  float: right;
+}
+.nav.active {
+  display: flex;
+}
+.navlink:hover {
+  color: $hovercolor;
+}
+#logopic {
+  height: 30px;
+  margin: 4px 10px 5px 15px;
+}
+#logo {
+  left: 10px;
+}
+.logolink {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+}
+.toggle-button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background: $light-color;
+  border-radius: 10px;
+}
+main {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 50px;
+}
+footer {
+  display: flex;
+  background: $primary-color;
+  color: $light-color;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  font-size: 1rem;
+}
+footer > p {
+  font-size: 1rem !important;
+  margin-left: 18px;
+}
+.btn {
+  border: 1px solid $light-color;
+  border-radius: 5px;
+  color: $light-color;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+
+//Home
+.indeximage {
+  width: 100%;
+  margin-bottom: -10px auto;
+  padding: 0;
+}
+.indeximage-split {
+  width: 50% !important;
+  margin: 0;
+  float: left;
+}
+#index-first {
+  background: $hovercolor;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: auto;
+  align-items: center;
+  justify-content: left;
+}
+#maintext {
+  width: 50%;
+  height: auto;
+  margin: auto 0;
+  text-align: center;
+  order: 1;
+  float: left;
+  background-color: $hovercolor;
+}
+#maintextcontainer {
+  margin: auto;
+  width: 80%;
+}
+#mainanimation {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary-background2;
+  order: 2;
+}
+#animationcontent {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#flower {
+  width: 75%;
+  height: auto;
+  animation: spin 6s linear infinite;
+}
+#index-second {
+  display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 25px auto;
+}
+.index-div {
+  height: 250px;
+  width: 250px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: $primary-color;
+  border-radius: 0%;
+  background: $hovercolor;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+.index-div:hover {
+  border-radius: 50%;
+  background: $secondary-background2;
+  color: $light-color;
+}
+.box-content {
+  display: flex;
+  width: 100px;
+  font-size: 1.6rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.csoki {
+  margin: -10px auto;
+}
+
+//Works
+#works-first {
+  background: $secondary-background2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+#works-second,
+#works-third,
+#works-fourth,
+#gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+#works-second,
+#works-third,
+#works-fourth {
+  background: $hovercolor;
+}
+.works-div {
+  display: flex;
+  width: 50%;
+  height: auto;
+  font-size: 1.6rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.works-text {
+  padding: 30px;
+}
+.works-img {
+  width: 100%;
+}
+.works-h2 {
+  margin: auto;
+  color: $primary-color;
+}
+#works-div-third-text {
+  order: 2;
+}
+#works-div-third-pic {
+  order: 1;
+}
+
+//Gallery
+#gallery {
+  background: $light-color;
+}
+.gallerygrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.galleryimage {
+  margin: 10px;
+  float: left;
+  width: 30vw;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px 2px $grey;
+}
+.gallimg {
+  width: 100vw;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+//About
+.kepem {
+  height: 16vw;
+  min-height: 320px;
+  display: inline;
+  margin: 20px;
+}
+.about-div {
+  width: auto;
+  display: inline;
+  height: auto;
+}
+.about-text {
+  width: 100%;
+  text-align: left;
+  padding: 0 30px 30px 30px;
+  margin: 20px auto 0 auto;
+}
+.about-text > p {
+  padding-bottom: 20px;
+}
+.about-text > div {
+  padding-left: 24px;
+}
+
+//Contact form
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: $font-stack;
+  font-size: 1.1rem;
+}
+#contact {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: $hovercolor;
+}
+.container {
+  border-radius: 5px;
+  padding: 30px;
+  width: 64vw;
+  margin: 20px;
+  background: $secondary-background2;
+}
+input[type="submit"] {
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: $font-stack;
+  font-size: 1.1rem;
+}
+input[type="submit"]:hover {
+  background-color: $hovercolor;
+  color: $primary-color;
+}
+#write-to-us {
+  margin: 0 0 20px 0;
+}
+
+@import "mobile";
+@import "keyframes";

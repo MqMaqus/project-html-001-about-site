@@ -3,7 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saját bemutatkozó oldal</title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="introduction, home, lemur graphics, web development, graphic design"
+    />
+    <meta
+      name="description"
+      content="Lemur Graphics graphic design and web development studio"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Lemur Graphics</title>
   </head>
-  <body></body>
+  <body>
+    <a name="top"></a>
+    <header id="header">
+      <nav id="logo">
+        <a href="index.html"
+          ><img id="logopic" src="images/logo2.png" alt="Lemur Graphics logo"
+        /></a>
+        <a class="logolink" href="index.html">Lemur Graphics</a>
+      </nav>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a class="navlink" href="index.html">Home</a></li>
+          <li><a class="navlink" href="works.html">Works</a></li>
+          <li><a class="navlink" href="gallery.html">Gallery</a></li>
+          <li><a class="navlink" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section id="index-first">
+        <div id="mainanimation">
+          <div id="animationcontent">
+            <img
+              id="flower"
+              src="images/animated-flower.svg"
+              alt="Animated flower"
+            />
+          </div>
+        </div>
+        <div id="maintext">
+          <div id="maintextcontainer">
+            <h1>Lemur Graphics</h1>
+            <h2>Graphic design and web development</h2>
+            <h3>
+              We design and create your company's professional identity and
+              website that you and your customers will equally love.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section id="index-second">
+        <div class="index-div">
+          <div class="box-content">Exciting solutions</div>
+        </div>
+        <div class="index-div">
+          <div class="box-content">Prompt delivery</div>
+        </div>
+        <div class="index-div">
+          <div class="box-content">Guaranteed quality</div>
+        </div>
+        <div class="index-div">
+          <div class="box-content">Smooth cooperation</div>
+        </div>
+      </section>
+
+      <section id="index-third">
+        <img
+          class="indeximage"
+          src="images/img-8.png"
+          alt="Pápai kékfestő múzeum arculat"
+        />
+        <img
+          class="indeximage indeximage-split csoki"
+          src="images/HP-parfüm-06.png"
+          alt="Parfüm csomagolásterve"
+        />
+        <img
+          class="indeximage indeximage-split csoki"
+          src="images/PixieWeather-weather-tip-for-humans-fakéz.png"
+          alt="Mobilapplikáció grafikai terve"
+        />
+        <img
+          class="indeximage csoki"
+          src="images/img-7.png"
+          alt="Prémium csokoládé csomagolásterve"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        Lemur Graphics
+      </p>
+      <a href="#top" class="btn">Back to top</a>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

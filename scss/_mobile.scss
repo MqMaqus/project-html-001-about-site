@@ -1,0 +1,177 @@
+@media (max-width: 1150px) {
+  .indeximage {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .indeximage-split {
+    width: 100vw !important;
+    float: none;
+  }
+  #mainanimation,
+  #maintext {
+    width: 100%;
+    height: auto;
+  }
+  #maintext {
+    text-align: center;
+    margin: 0;
+    padding: 100px;
+  }
+  #flower {
+    width: 65%;
+    margin: 30px 0 30px 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+    margin-top: 30px;
+  }
+  footer > p {
+    font-size: 1rem;
+  }
+  #index-first {
+    height: 90vh;
+    display: block;
+    background-color: transparent;
+  }
+  #index-second,
+  #index-third,
+  #works-second,
+  #works-third,
+  #works-fourth,
+  .works-div {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  #index-second {
+    float: right;
+    margin: 40px 0;
+  }
+  #works-first {
+    height: 250px;
+  }
+  .works-text {
+    height: auto;
+    clear: both;
+    margin: auto 0;
+    padding: 40px 20px;
+  }
+  section {
+    display: block;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    overflow: visible;
+    height: auto;
+    margin: 50px 0px 0 0;
+    position: relative;
+    ul,
+    li,
+    a {
+      flex-direction: column;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    li {
+      padding: 10px 18px;
+      border-bottom: 2px solid $red;
+      background-color: $hovercolor-trans;
+      width: 150px;
+      text-align: center;
+    }
+    a:hover {
+      color: $primary-color;
+    }
+  }
+  .csoki {
+    margin: -10px 0;
+  }
+  .galleryimage {
+    width: 45vw;
+  }
+  .kepem {
+    margin: 20px 0 0 0;
+  }
+  .container {
+    width: 90vw;
+    margin: 5px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  #index-first {
+    height: 75vh;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  #maintext {
+    padding: 30px;
+  }
+  #works-first {
+    height: 180px;
+  }
+  .galleryimage {
+    width: 100vw;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #index-first {
+    height: 70vh;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  #logopic {
+    display: none;
+  }
+  .logolink {
+    font-size: 1.3rem;
+    padding-left: 20px;
+  }
+  #maintext {
+    padding-left: 20px;
+  }
+  .btn {
+    display: block;
+  }
+  .kepem {
+    height: auto;
+    min-height: 0px;
+    width: 100%;
+    margin: 0;
+  }
+}

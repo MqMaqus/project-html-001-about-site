@@ -1,0 +1,24 @@
+$font-stack: "Montserrat", sans-serif;
+$light-color: #d7d7d7;
+$primary-color: #0c2431;
+$primary-color2: rgba(25, 45, 88, 0.7);
+$secondary-color: rgba(51, 108, 138, 0.5);
+$hovercolor: #4e98ac;
+$hovercolor-trans: #4e98acbc;
+$grey: rgba(58, 59, 59, 0.5);
+
+$yellow: rgba(248, 215, 124, 0.8);
+$greyblue: #d1e0e9;
+$salmon: rgb(240, 97, 97);
+$magenta: rgba(233, 32, 109, 0.7);
+$red: rgba(233, 32, 32, 0.85);
+$primary-blue: #263974;
+$secondary-background: linear-gradient(
+  0.25turn,
+  rgb(188, 194, 202),
+  rgba(51, 108, 138, 0.3),
+  rgb(188, 194, 202)
+);
+
+$secondary-background3: linear-gradient(0.25turn, $salmon, $red, $salmon);
+$secondary-background2: linear-gradient(0.25turn, $red, $salmon, $red);
